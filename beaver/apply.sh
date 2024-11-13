@@ -3,11 +3,11 @@ sudo apt-get update
 sudo apt-get -y upgrade
 sudo apt-get -y install $packages
 
-if command -v git >/dev/null 2>&1
+if ! command -v cloudflared >/dev/null 2>&1
 then
-    echo "git is installed and in PATH"
-else
-    echo "git is not installed or not in PATH"
+    curl -L --output cloudflared.deb https://github.com/cloudflare/cloudflared/releases/latest/download/cloudflared-linux-amd64.deb
+    sudo dpkg -i cloudflared.deb
+    rm cloudflared.deb
 fi
 
 if [[ -n $(git status -s -uall) ]]
