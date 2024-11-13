@@ -1,3 +1,4 @@
 mc
 network-manager
 git
+default-jdk
