@@ -1,3 +1,4 @@
 mc
 git
 default-jdk
+cloudflare-warp
