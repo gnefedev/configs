@@ -1,0 +1,3 @@
+mc
+network-manager
+git
