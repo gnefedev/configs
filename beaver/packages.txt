@@ -4,4 +4,4 @@ git
 default-jdk
 parallel
 python3-pip
-pipx
+pipenv
