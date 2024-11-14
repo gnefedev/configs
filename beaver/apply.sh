@@ -3,7 +3,7 @@ sudo apt-get update
 sudo apt-get -y upgrade
 sudo apt-get -y install $packages
 
-pip install pipenv --user
+pip install --user --upgrade pipenv
 
 if ! command -v cloudflared >/dev/null 2>&1
 then
