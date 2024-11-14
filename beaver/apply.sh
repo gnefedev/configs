@@ -3,8 +3,6 @@ sudo apt-get update
 sudo apt-get -y upgrade
 sudo apt-get -y install $packages
 
-pip install --user --upgrade pipenv
-
 if ! command -v cloudflared >/dev/null 2>&1
 then
     curl -L --output cloudflared.deb https://github.com/cloudflare/cloudflared/releases/latest/download/cloudflared-linux-amd64.deb
