@@ -1,3 +1,5 @@
+sudo add-apt-repository ppa:deadsnakes/ppa
+
 packages=`cat packages.txt`
 sudo apt-get update
 sudo apt-get -y upgrade
